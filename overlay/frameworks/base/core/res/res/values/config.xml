@@ -197,6 +197,9 @@
 
     <!-- Show navbar -->
     <bool name="config_showNavigationBar">true</bool>
+ 
+    <!-- Whether device has screen with higher aspect ratio -->
+    <bool name="config_haveHigherAspectRatioScreen">true</bool>
 
     <!-- Default list of files pinned by the Pinner Service -->
     <string-array translatable="false" name="config_defaultPinnerServiceFiles">
