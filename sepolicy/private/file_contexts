@@ -25,10 +25,6 @@
 /data/facapp                    u:object_r:cust_data_file:s0
 /data/custom_cota\.bin          u:object_r:cust_data_file:s0
 
-# Display engine
-/system/bin/displayengineserver@1.0    u:object_r:displayengineserver_exec:s0
-/system/bin/displayengineserver@1.1    u:object_r:displayengineserver_exec:s0
-
 # DMD
 /dev/dsm                   u:object_r:dmd_device:s0
 
@@ -55,9 +51,6 @@
 /data/android_logs(/.*)?                u:object_r:logcat_data_file:s0
 /data/log/fingerprint(/.*)?             u:object_r:logcat_data_file:s0
 
-# pmom (?)
-/dev/pmom               u:object_r:pmom_device:s0
-
 # Secure storage
 /sec_storage(/.*)?              u:object_r:teecd_data_file:s0
 /data/sec_storage_data(/.*)?          u:object_r:teecd_data_file:s0
@@ -68,3 +61,7 @@
 
 # VNDK
 /system/bin/vndk-detect    u:object_r:vndk_detect_exec:s0
+
+# pmom
+/dev/pmom                  u:object_r:pmom_cat_device:s0
+/vendor/bin/pmom_cat       u:object_r:pmom_cat:s0
