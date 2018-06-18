@@ -99,6 +99,10 @@ if [ "$(grep ro.build.version.release /vendor/build.prop)" = "ro.build.version.r
 
     # Remove duplicated properties
     sed -i "/huawei.check.root./d" /system/etc/selinux/plat_property_contexts
+
+    # Disable parsing intra-refresh-mode parameter in libstagefright
+    sed -i 's/intra-refresh-mode/intra-refresh-nope/' /system/lib64/libstagefright.so
+    sed -i 's/intra-refresh-mode/intra-refresh-nope/' /system/lib/libstagefright.so
 fi
 
 exit 0
