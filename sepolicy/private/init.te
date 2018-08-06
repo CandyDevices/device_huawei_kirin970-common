@@ -9,6 +9,7 @@ allow init block_device:dir mounton;
 allow init vendor_file:file mounton;
 
 # Allow init to mount vendor configs
+allow init vendor_configs_file:dir mounton;
 allow init vendor_configs_file:file mounton;
 
 allow init dubai_log_device:chr_file write;
@@ -25,4 +26,3 @@ allow init bfm_device:chr_file { getattr open ioctl write };
 
 # Allow init to mount adbd binary
 allow init rootfs:file mounton;
-
