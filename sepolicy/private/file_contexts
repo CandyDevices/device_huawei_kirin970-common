@@ -59,9 +59,6 @@
 # Splash2
 /splash2(/.*)?                                  u:object_r:splash2_data_file:s0
 
-# VNDK
-/system/bin/vndk-detect    u:object_r:vndk_detect_exec:s0
-
 # pmom
 /dev/pmom                  u:object_r:pmom_cat_device:s0
 /vendor/bin/pmom_cat       u:object_r:pmom_cat:s0
