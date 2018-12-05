@@ -36,3 +36,6 @@ allow init bfm_device:chr_file { getattr open ioctl write };
 
 # Allow init to mount adbd binary
 allow init rootfs:file mounton;
+
+# Allow init to write to sysfs_power
+allow init sysfs_power:file w_file_perms;
