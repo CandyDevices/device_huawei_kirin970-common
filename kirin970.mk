@@ -55,7 +55,7 @@ PRODUCT_PACKAGES += \
     com.android.nfc_extras
 
 PRODUCT_COPY_FILES += \
-    device/generic/common/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf
+    $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:system/etc/libnfc-nci.conf
 
 # odm-init
 PRODUCT_PACKAGES += \
